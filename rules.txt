@@ -1,0 +1,22 @@
+- The object is to have a hand with a total value higher than the dealer’s without going over 21. 
+- Kings, Queens, Jacks and Tens are worth a value of 10. 
+- An Ace has the value of 1 or 11. 
+- The remaining cards are counted at face value.
+- You and fellow players are dealt two cards each whilst the dealer is dealt one face up. 
+- If your first 2 cards add up to 21 (an Ace and a card valued 10), that’s Blackjack!
+- Once all players have taken their turn the dealer draws another card for their hand. 
+- The dealer must draw until they reach 17 or more.
+- Once all cards are drawn, whoever has a total closer to 21 than the dealer wins. 
+- If player’s hand and dealer’s hand have an equal value, it’s a tie.
+
+Create two lists, one for the player, one for the dealer. 
+Player gets one card, dealer one card, add them to the appropriate list.
+Dealers card value is shown. 
+Player gets his second card, add it to the appropriate list.
+Player sees the cards in his hand as well as the dealers card.
+Player takes cards until they get as close to 21 without going over. (draw or stay)
+Dealer gets his second card, until over 17, hits 21. or goes over. 
+
+If player has higher score, they wins
+if player and dealer tie, it's a push
+if dealer has higher score, player loses
