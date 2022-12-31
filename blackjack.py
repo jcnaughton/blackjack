@@ -1,5 +1,6 @@
 import requests
 import sys
+import json
 
 ### https://www.deckofcardsapi.com/
 
@@ -8,7 +9,10 @@ def drawCard(deckId):
     r=requests.get(url)
     # print(r.text)
     if r.status_code == 200:
+        print(url)
+        print(json.dumps(r.json(), indent=4))
         return r.json()['cards'][0]['code']
+
     else:
         print("Connection to card api server failed")
         sys.exit()
@@ -18,6 +22,8 @@ def createShuffle():
     url = 'https://www.deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1'
     r=requests.get(url)
     if r.status_code == 200:
+        print(url)
+        print(json.dumps(r.json(), indent=4))
         return r.json()['deck_id']
     else:
         print("Connection to card api server failed")
