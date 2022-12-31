@@ -1,3 +1,5 @@
+12/31/2022
+
 - The object is to have a hand with a total value higher than the dealer’s without going over 21. 
 - Kings, Queens, Jacks and Tens are worth a value of 10. 
 - An Ace has the value of 1 or 11. 
@@ -20,3 +22,6 @@ Dealer gets his second card, until over 17, hits 21. or goes over.
 If player has higher score, they wins
 if player and dealer tie, it's a push
 if dealer has higher score, player loses
+
+bugs:
+- cards that are 10 are represented by 0 so 10 of hearts is 0H, added logic to make the value a 10.  
